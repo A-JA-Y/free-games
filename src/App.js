@@ -1,8 +1,14 @@
-import React from 'react';
-import { DatePicker } from 'antd';
+import React from "react";
+import Navbar from "./components/navbar";
 
 const App = () => {
-  return <DatePicker />;
+  return (
+    <>
+      <div className="bg-zinc-700 h-screen w-screen">
+        <Navbar />
+      </div>
+    </>
+  );
 };
 
 export default App;
