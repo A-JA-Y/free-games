@@ -5,9 +5,9 @@ import Games from "./components/gamesData";
 const App = () => {
   return (
     <>
-      <div className="bg-zinc-700 h-screen w-screen">
-        <Navbar />
-        <Games />
+      <div className="bg-zinc-700 min-w-full min-h-full ">
+        <Navbar  />
+        <Games/>
       </div>
     </>
   );
