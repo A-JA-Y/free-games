@@ -8,6 +8,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
+In this project I had CORS error .
+this project is submitted as minor proj6in college.
 
 In the project directory, you can run:
 
