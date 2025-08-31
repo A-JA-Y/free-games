@@ -16,6 +16,7 @@ function Navbar() {
         <a
           href="https://github.com/A-JA-Y/free-games"
           target="_blank"
+          rel="noreferrer"
           className="github-link"
         >
           <Button
