@@ -24,17 +24,18 @@ function Games() {
     <>
       <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-1 my-4 gap-6 p-4 relative px-8">
         {games.slice(0, visibleGames).map((game) => (
-          <div key={game.id} className="bg-gray-100 rounded-lg shadow-md hover:shadow-lg flex flex-col items-center justify-center transition duration-500 transform hover:-translate-y-1 hover:scale-105">
-            <img src={game.thumbnail} alt={game.title} className="rounded-t-lg" />
-            <div className="p-4">
+          <div key={game.id} className="bg-gray-100 bg-opacity-10  text-white rounded-lg shadow-md  hover:shadow-lg flex flex-col pt-3 items-center justify-center transition duration-500 transform hover:-translate-y-1 hover:scale-[1.016]">
+            <img src={game.thumbnail} alt={game.title} className="w-[90%] h-50 rounded-lg " /> 
+            <div className="p-4 text-white ">
               <h2 className="text-xl font-bold">{game.title}</h2>
-              <p className="text-gray-600">{game.short_description}</p>
-              <p className="text-gray-600"><strong>Platform:</strong> {game.platform}</p>
-              <p className="text-gray-600"><strong>Genre:</strong> {game.genre}</p>
-              <p className="text-gray-600"><strong>Publisher:</strong> {game.publisher}</p>
-              <p className="text-gray-600"><strong>Developer:</strong> {game.developer}</p>
-              <p className="text-gray-600"><strong>Release Date:</strong> {game.release_date}</p>
-              <a href={game.game_url} target="_blank" rel="noreferrer" className="bg-blue-500 text-white px-4 py-2 rounded-md block mt-4 hover:bg-blue-600">Play Game</a>
+              <p >{game.short_description}</p>
+              <p ><strong>Platform:</strong> {game.platform}</p>
+              <p ><strong>Genre:</strong> {game.genre}</p>
+              <p ><strong>Publisher:</strong> {game.publisher}</p>
+              <p ><strong>Developer:</strong> {game.developer}</p>
+              <p ><strong>Release Date:</strong> {game.release_date}</p>
+              <a href={game.game_url} target="_blank" rel="noreferrer" className="bg-blue-500 text-white px-4 py-2 rounded-md block mt-4 hover:bg-blue-600 text-center">Download from official site</a>
+              <a href={`https://www.chikiigame.com/m/chikiiwebprod/index.html#/GameLibrary?search=${game.title}`} target="_blank" rel="noreferrer" className="text-center bg-blue-500 text-white px-4 py-2 rounded-md block mt-4 hover:bg-blue-600">Play on cloud</a>
             </div>
           </div>
         ))}
